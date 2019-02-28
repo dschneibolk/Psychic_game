@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script type="text/javascript" src = "logic.js"></script>
+        <title>Guessing Game</title>
+    </head>
+
+    <body onload="startUp()">
+        <h1>Guess a Letter</h1>
+        <!--User guess text box-->
+        <input id="letter" type="text">
+
+        <!--Guess button that runs "Letter" function-->
+
+        <input type="button" value = "letter" onclick="Letter()"/>
+        <p id= "answer"></p>
+        <p id= "counter"></p>
+        <p id = "stat"></p>
+
+    </body>
+</html>
