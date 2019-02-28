@@ -1,6 +1,6 @@
 //Possible word choices from computer
 
-let randomWordArr = ["apple", "javascript", "sucks",];
+let randomWordArr = ["apple", "javascript", "sucks", "constellation", "galaxy", "orange", "dream", "house", "raffle", "advil"];
 
 //choose word from array at random
 
@@ -18,7 +18,7 @@ var answerArray = [];
 
 function startUp() 
 {
-    for (var i = 0; i < wordGuess.length; i++);
+    for (var i = 0; i < wordGuess.length; i++)
     {
         answerArray[i] = " _ ";
     }
@@ -50,50 +50,15 @@ function Letter() {
 
     if (count > 5) 
     {
-        document.getElementById("stat").innerHTML = "<b>You're bad at this game</b>";
+        document.getElementById("message").innerHTML = "You're bad at this game";
+    }
+
+    if (count > 10)
+    {
+        document.getElementById("message").innerHTML = "You're <b>really<b> bad at this game";
+    }
+
+    if (count > 15){
+        document.getElementById("message").innerHTML = "Just quit."
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//run through the loop and add a dash for each member of the array. 
-
-
-// let remainingLetters = chosenWord.length; 
-
-// function() {
-//     document.getElementById("answerArray").textContent = answerArray.join(" ");
-// }
-
-// // document.getElementById("userprogress").textContent = userProgress.join(" ")
-
-// console.log(wordArray);
-
-// console.log(wordBank[chosenWord]);
-
-// //Log the user's input with onkeyup + event.key 
-
-// document.onkeyup = function(){
-//     let userInput = event.key.toLowerCase();
-//     console.log(userInput);
-
-
-// for (let j = 0; j < wordArray.length; j++){
-//     if(userInput === wordArray[j]){
-//         answerArray[j] = wordArray[j];
-//          }
-//     }
-// }
-
-// console.log(answerArray);
-// render();
